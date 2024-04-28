@@ -1,10 +1,13 @@
 package com.archie.ShowPal.service;
 
+import com.archie.ShowPal.repository.TicketRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class TicketService {
-    public String greet(){
-        return "Hello World from my API";
-    }
+    @Autowired
+    private TicketRepository ticketRepository;
+
+
 }

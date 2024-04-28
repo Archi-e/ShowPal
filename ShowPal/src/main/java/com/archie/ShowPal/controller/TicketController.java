@@ -11,9 +11,4 @@ public class TicketController {
     @Autowired
     private TicketService ticketService;
 
-    @GetMapping("/hello")
-    public ResponseEntity greet(){
-        String greet = ticketService.greet();
-        return ResponseEntity.ok(greet);
-    }
 }
